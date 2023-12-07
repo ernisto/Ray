@@ -1,7 +1,4 @@
 {
   "name": "ray",
-  "tree": {
-    "$className": "DataModel",
-    "$path": "src"
-  }
+  "tree": { "$path": "src" }
 }
