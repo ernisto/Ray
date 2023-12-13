@@ -132,7 +132,7 @@ export type spatial_params = { from: Vector3, thickness: number? } & (
     | { plus: Vector3, range: number? }
 )
 export type filtring_params = {
-    checker: (instance: Instance) -> boolean,
+    checker: hit_checker?,
     including: {Instance}?,
     excluding: {Instance}?,
     respectCanCollide: boolean?,
@@ -141,6 +141,7 @@ export type filtring_params = {
     ignoreWater: boolean?,
 }
 export type params = spatial_params & filtring_params
+export type hit_checker = (instance: Instance) -> boolean
 
 --// End
 return Ray
